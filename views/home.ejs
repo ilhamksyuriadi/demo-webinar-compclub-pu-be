@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Simple Blog</title>
+    <link rel="stylesheet" href="/css/home.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <%= blogHeader %>
+        </h1>
+        <nav>
+            <a href="http://localhost:3001/">Home</a>
+            <a href="http://localhost:3001/about">About</a>
+        </nav>
+    </header>
+    <div class="blog-container">
+        <% for(let i=0; i <=blogs.length - 1; i++ ){ %>
+            <div class="blog-card">
+                <h2>
+                    <%= blogs[i]?.title %>
+                </h2>
+                <p>
+                    <%= blogs[i]?.content %>
+                </p>
+                <a href="http://localhost:3001/blog/<%= blogs[i]?._id %>">Read more...</a>
+            </div>
+            <% } %>
+    </div>
+    <footer>Demo website for webinar Web Foundation compclub Presiden Univ, by ilhamksyuriadi © 2022</footer>
+</body>
+
+</html>
