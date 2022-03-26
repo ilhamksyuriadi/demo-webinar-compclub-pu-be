@@ -1,8 +1,8 @@
 {
     "demoConfig": {
         "database": {
-            "password": "SWHJBSqeXDeFqXUa",
-            "URL":"mongodb+srv://userDemo:SWHJBSqeXDeFqXUa@clusterdemo.qjnea.mongodb.net/blogdb?retryWrites=true&w=majority"
+            "password": "for-saving-db-password(optional)",
+            "URL":"your-mongodb-url-here"
         }
     }
 }
